@@ -39,7 +39,7 @@ runs:
         fi
       shell: bash
     - name: Build commenter docker image
-      run: docker build --build-arg TERRAFORM_VERSION=${{ steps.tf_version.outputs.version }} -t commenter https://github.com/VerticeOne/terraform-pr-commenter.git#fix/CE-108_terragrunt
+      run: docker build --build-arg TERRAFORM_VERSION=${{ steps.tf_version.outputs.version }} -t commenter https://github.com/VerticeOne/terraform-pr-commenter.git#main
       shell: bash
     - name: Run commenter image (plan)
       if: ${{ inputs.commenter_type == 'plan' }}
