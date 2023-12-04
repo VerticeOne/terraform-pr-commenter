@@ -58,7 +58,7 @@ runs:
         -e COMMENTER_INPUT \
         -e COMMENTER_DEBUG \
         -e COMMENTER_ECHO \
-        -e COMMENTER_MULTIPLE_PLANS \
+        -e COMMENTER_MULTIPLE_MODULES \
         -e COMMENTER_PLAN_FILE \
         -e COMMENTER_POST_PLAN_OUTPUTS \
         -v "$(pwd)"/:/workspace \
